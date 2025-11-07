@@ -1,0 +1,64 @@
+/* Minimal, clean academic styling */
+:root {
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: #5f6368;
+  --accent: #0b57d0;
+  --card: #f6f8fa;
+  --border: #e4e7eb;
+  --maxw: 900px;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 18px;
+}
+
+.title { margin: 0 0 6px; font-size: 34px; font-weight: 700; }
+.tagline { margin: 0 0 12px; color: var(--muted); }
+
+.nav { display: flex; flex-wrap: wrap; gap: 12px; }
+.nav a {
+  text-decoration: none;
+  color: var(--accent);
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.nav a:hover { background: var(--card); }
+
+main section { padding: 28px 0; border-bottom: 1px solid var(--border); }
+h2 { margin: 0 0 10px; font-size: 22px; }
+
+.pill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.pill-list li {
+  padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; background: #fff;
+}
+
+.pub-list { padding-left: 18px; }
+.pub-list li { margin-bottom: 12px; }
+
+.contact { list-style: none; padding: 0; margin: 0; }
+.contact li { margin-bottom: 6px; }
+
+.site-footer { background: var(--card); padding: 18px 0; color: var(--muted); }
+@media (max-width: 600px) {
+  .title { font-size: 28px; }
+}
