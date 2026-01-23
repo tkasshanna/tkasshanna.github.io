@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tkasshanna.github.io/sitemap.xml
